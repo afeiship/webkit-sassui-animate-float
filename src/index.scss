@@ -1,8 +1,15 @@
 /*webkit-sassui-animate-float Start*/
-$webkit-sassui-animate-float-options: () !default;
+$webkit-sassui-animate-float-options: (
+  duration: 3s
+) !default;
 
 .webkit-sassui-animate-float {
-  animation: webkit-sassui-float ease-in-out 3s infinite;
+  $duration: map-get(
+    $map: $webkit-sassui-animate-float-options,
+    $key: duration
+  );
+
+  animation: webkit-sassui-float ease-in-out $duration infinite;
 }
 
 @-webkit-keyframes webkit-sassui-float {
