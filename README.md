@@ -14,4 +14,4 @@ npm i -S @feizheng/webkit-sassui-animate-float
 ```
 
 ## resources
-+ https://github.com/afeiship/generator-webkit-sassui
+- https://y.qq.com/download/mac.html
