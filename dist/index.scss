@@ -1,0 +1,21 @@
+/*webkit-sassui-animate-float Start*/
+$webkit-sassui-animate-float-options: () !default;
+
+.webkit-sassui-animate-float {
+  animation: webkit-sassui-float ease-in-out 3s infinite;
+}
+
+@-webkit-keyframes webkit-sassui-float {
+  0% {
+    -webkit-transform: translateY(0);
+  }
+
+  50% {
+    -webkit-transform: translateY(-1em);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+  }
+}
+/*webkit-sassui-animate-float End*/

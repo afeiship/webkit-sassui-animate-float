@@ -1,0 +1,36 @@
+/*webkit-sassui-animate-float Start*/
+.webkit-sassui-animate-float {
+  animation: webkit-sassui-float ease-in-out 3s infinite;
+}
+
+@-webkit-keyframes webkit-sassui-float {
+  0% {
+    -webkit-transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-1em);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+  }
+}
+
+/*webkit-sassui-animate-float End*/
+body,
+html {
+  height: 100%;
+  position: relative;
+}
+
+.webkit-sassui-animate-float {
+  position: absolute;
+  border: 1px solid #e6e4e2;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 80%;
+  margin: auto;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
