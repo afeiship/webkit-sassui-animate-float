@@ -1,16 +1,17 @@
-@import "../dist/index.scss";
+@import "../src/index.scss";
 
 body,
 html {
   height: 100%;
   position: relative;
 }
-.webkit-sassui-animate-float {
+.wsui-animate-float {
   position: absolute;
   border: 1px solid #e6e4e2;
   border-radius: 10px;
   overflow: hidden;
-  width: 80%;
+  width: 50%;
+  min-width: 500px;
   margin: auto;
   left: 0;
   top: 0;

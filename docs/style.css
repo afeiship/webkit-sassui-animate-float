@@ -1,9 +1,9 @@
-/*webkit-sassui-animate-float Start*/
-.webkit-sassui-animate-float {
-  animation: webkit-sassui-float ease-in-out 3s infinite;
+/*wsui-animate-float Start*/
+.wsui-animate-float {
+  animation: wsui-float ease-in-out 3s infinite;
 }
 
-@-webkit-keyframes webkit-sassui-float {
+@-webkit-keyframes wsui-float {
   0% {
     -webkit-transform: translateY(0);
   }
@@ -15,19 +15,19 @@
   }
 }
 
-/*webkit-sassui-animate-float End*/
+/*wsui-animate-float End*/
 body,
 html {
   height: 100%;
   position: relative;
 }
 
-.webkit-sassui-animate-float {
+.wsui-animate-float {
   position: absolute;
   border: 1px solid #e6e4e2;
   border-radius: 10px;
   overflow: hidden;
-  width: 80%;
+  width: 50%;
   margin: auto;
   left: 0;
   top: 0;

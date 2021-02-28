@@ -1,18 +1,18 @@
-/*webkit-sassui-animate-float Start*/
-$webkit-sassui-animate-float-options: (
+/*wsui-animate-float Start*/
+$wsui-animate-float-options: (
   duration: 3s
 ) !default;
 
-.webkit-sassui-animate-float {
+.wsui-animate-float {
   $duration: map-get(
-    $map: $webkit-sassui-animate-float-options,
+    $map: $wsui-animate-float-options,
     $key: duration
   );
 
-  animation: webkit-sassui-float ease-in-out $duration infinite;
+  animation: wsui-float ease-in-out $duration infinite;
 }
 
-@-webkit-keyframes webkit-sassui-float {
+@-webkit-keyframes wsui-float {
   0% {
     -webkit-transform: translateY(0);
   }
@@ -25,4 +25,4 @@ $webkit-sassui-animate-float-options: (
     -webkit-transform: translateY(0);
   }
 }
-/*webkit-sassui-animate-float End*/
+/*wsui-animate-float End*/
