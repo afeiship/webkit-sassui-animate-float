@@ -3,6 +3,18 @@
   animation: wsui-float ease-in-out 3s infinite;
 }
 
+.wsui-animate-float[data-speed="fast"] {
+  animation-duration: 3s;
+}
+
+.wsui-animate-float[data-speed="normal"] {
+  animation-duration: 10s;
+}
+
+.wsui-animate-float[data-speed="slow"] {
+  animation-duration: 20s;
+}
+
 @-webkit-keyframes wsui-float {
   0% {
     -webkit-transform: translateY(0);
@@ -22,16 +34,14 @@ html {
   position: relative;
 }
 
+.is-container {
+  text-align: center;
+}
+
 .wsui-animate-float {
-  position: absolute;
   border: 1px solid #e6e4e2;
   border-radius: 10px;
   overflow: hidden;
-  width: 50%;
-  min-width: 500px;
-  margin: auto;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
+  width: 120px;
+  margin: 30px;
 }

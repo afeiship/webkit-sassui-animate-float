@@ -3,13 +3,22 @@
  * description: Float element for webkit sass ui.
  * homepage: https://github.com/afeiship/wsui-animate-float
  * version: 1.0.0
- * date: 2021-02-28 22:26:26
+ * date: 2021-03-13 10:11:36
  * license: MIT
  */
 /*wsui-animate-float Start*/
 .wsui-animate-float {
   -webkit-animation: wsui-float ease-in-out 3s infinite;
           animation: wsui-float ease-in-out 3s infinite; }
+  .wsui-animate-float[data-speed="fast"] {
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s; }
+  .wsui-animate-float[data-speed="normal"] {
+    -webkit-animation-duration: 10s;
+            animation-duration: 10s; }
+  .wsui-animate-float[data-speed="slow"] {
+    -webkit-animation-duration: 20s;
+            animation-duration: 20s; }
 
 @-webkit-keyframes wsui-float {
   0% {

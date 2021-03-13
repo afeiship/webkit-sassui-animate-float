@@ -1,15 +1,26 @@
 /*wsui-animate-float Start*/
 $wsui-animate-float-options: (
-  duration: 3s
+  fast: 3s,
+  normal: 10s,
+  slow: 20s,
 ) !default;
 
 .wsui-animate-float {
   $duration: map-get(
     $map: $wsui-animate-float-options,
-    $key: duration
+    $key: duration,
   );
 
-  animation: wsui-float ease-in-out $duration infinite;
+  animation: wsui-float ease-in-out 3s infinite;
+  &[data-speed="fast"] {
+    animation-duration: 3s;
+  }
+  &[data-speed="normal"] {
+    animation-duration: 10s;
+  }
+  &[data-speed="slow"] {
+    animation-duration: 20s;
+  }
 }
 
 @-webkit-keyframes wsui-float {
